@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a7b64fe-7fa0-4f90-98f6-8ddf522635a8" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sentryclirc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/vtr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo1/cool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo1/cool.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo1/demo1_dest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo1/demo1_src.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo1/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo2/demo2_dest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo2/demo2_src.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo2/imageVerify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo2/imageVerify.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/demo2/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/formatThis.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsxElementGenerator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reactIterator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reactTemplateBuilder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reactVisitor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scriptIterator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scriptVisitor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templateIterator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/eventMap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/formatCode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/logUtil.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/tools.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue2react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/less/colors.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/less/dimensions.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/less/fonts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/less/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/util/initalCode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/util/report.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/util/tools.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/common/util/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/App/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/App/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Button/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Button/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/CodeEditor/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/CodeEditor/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Console/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Console/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Divider/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Divider/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Header/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/Header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/ResizableContainer/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/components/ResizableContainer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HaL8jOVWtwK9ubUl1Hlf0vXkNM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3a7b64fe-7fa0-4f90-98f6-8ddf522635a8" name="变更" comment="" />
+      <created>1668518103952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668518103952</updated>
+      <workItem from="1668518105979" duration="4785000" />
+      <workItem from="1668523149929" duration="1246000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
