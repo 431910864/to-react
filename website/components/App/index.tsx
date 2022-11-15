@@ -1,21 +1,41 @@
 import * as React from 'react';
 import { usePersist } from 'react-hooks-set';
 import { transformCode } from '../../../src/index';
-import initalCode from '../../common/util/initalCode';
+import initalCode, { initalCode1 } from '../../common/util/initalCode';
 import ResizableContainer from '../ResizableContainer';
-import Header from '../Header';
+import Header, { SelectType } from '../Header';
 import CodeEditor from '../CodeEditor';
 import Console from '../Console';
 import { Log } from '../../common/util/types';
 
 import * as styles from './index.less';
 
+const extractReactComponents = require("html-to-react-components");
+
 const App: React.FC = () => {
-  const [sourceCode, setSourceCode, clearSourceCode] = usePersist(
-    'sourceCode',
+  var sourceCode: any, setSourceCode: any;
+  const [sourceVueCode, setSourceVueCode] = usePersist(
+    'sourceVueCode',
     initalCode,
     true
   );
+  const [sourceHtmlCode, setSourceHtmlCode] = usePersist(
+    'sourceHtmlCode',
+    initalCode1,
+    true
+  );
+  const [selectValue, onSelect] = usePersist(
+    'selectType',
+    SelectType.HTML,
+    true
+  );
+  if (selectValue === SelectType.Vue) {
+    sourceCode = sourceVueCode
+    setSourceCode = setSourceVueCode
+  } else {
+    sourceCode = sourceHtmlCode
+    setSourceCode = setSourceHtmlCode
+  }
   const [targetCode, setTargetCode] = React.useState('');
   const [logging, setLogging] = React.useState([] as Log[]);
 
@@ -32,12 +52,19 @@ const App: React.FC = () => {
 
   const handleTransformCode = () => {
     try {
-      const [script, , logHistory] = transformCode(sourceCode);
-      setTargetCode(script);
-      setLogging(logHistory);
-      logHistory.forEach((log: Log) => {
-        window.$sentry && window.$sentry.report(log);
-      });
+      if (selectValue === SelectType.Vue) {
+        const [script, , logHistory] = transformCode(sourceCode);
+        setTargetCode(script);
+        setLogging(logHistory);
+        logHistory.forEach((log: Log) => {
+          window.$sentry && window.$sentry.report(log);
+        });
+      } else {
+        setTargetCode(extractReactComponents(sourceCode, {
+          componentType: "stateless",
+          moduleType: false
+        })?.Header?.replace?.(/classname/g, 'className'))
+      }
     } catch (error) {
       setTargetCode('');
       setLogging([{ msg: error.toString(), type: 'error' }]);
@@ -49,6 +76,8 @@ const App: React.FC = () => {
   return (
     <div className={styles.app}>
       <Header
+        onSelect={onSelect}
+        selectValue={selectValue}
         sourceCode={sourceCode}
         targetCode={targetCode}
         onTransformCode={handleTransformCode}

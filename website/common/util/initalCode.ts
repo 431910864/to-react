@@ -54,4 +54,12 @@ export default {
 };
 </script>`;
 
+export const initalCode1 = `<div data-component="Header" style="position:relative;background:#F5F8FF;transition:all 0.3s">
+  <div style="position:absolute;inset:0">
+    <div style="transition:all 0.3s;opacity:1">
+      123
+    </div>
+  </div>
+</div>`
+
 export default initalCode;

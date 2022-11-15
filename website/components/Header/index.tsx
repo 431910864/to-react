@@ -16,8 +16,15 @@ import {
 } from '../../common/util/tools';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Select } from 'antd'
+import 'antd/dist/antd.css'
 
 import * as styles from './index.less';
+
+export enum SelectType {
+  Vue = 'vue',
+  HTML = 'html'
+}
 
 interface IProps {
   sourceCode: string;
@@ -25,12 +32,14 @@ interface IProps {
   className?: React.CSSProperties;
   onTransformCode: () => void;
   onUpdateCode: (value: string) => void;
+  selectValue: string
+  onSelect: (value: string) => void;
 }
 
 const Header: React.FC<IProps> = props => {
   const inputEl = React.useRef<HTMLInputElement>(null);
 
-  const { sourceCode, targetCode, onTransformCode, onUpdateCode } = props;
+  const { sourceCode, targetCode, onTransformCode, onUpdateCode, selectValue, onSelect } = props;
 
   const handleClickFullScreen = (): void => {
     if (screenfull && screenfull.enabled) {
@@ -42,6 +51,7 @@ const Header: React.FC<IProps> = props => {
     }
   };
 
+  console.log((Object.entries(SelectType) as any))
   return (
     <div className={styles.header}>
       <div className={styles.row}>
@@ -53,6 +63,11 @@ const Header: React.FC<IProps> = props => {
           >
             VUE2REACT
           </Button>
+          <Select style={{ width: 100, }} defaultValue={selectValue} onSelect={onSelect}>
+            {(Object.entries(SelectType) as any)?.map((item: any) => {
+              return <Select.Option key={item[1]}>{item[0]}</Select.Option>
+            })}
+          </Select>
         </div>
         <div className={styles.section}>
           <Button
